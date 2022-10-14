@@ -1,6 +1,7 @@
 
 import React, { useState } from "react"
 import logo from "../Assets/logo-vantagens-face.png"
+import desenho from "../Assets/desenho.png"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function (props) {
@@ -48,6 +49,7 @@ export default function (props) {
             </p>
           </div>
         </form>
+        <img className="Auth-image-out" src={desenho} width="700px" alt="logo"></img>
       </div>
     )
   }
