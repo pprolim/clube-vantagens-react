@@ -1,5 +1,6 @@
 
 import React, { useState } from "react"
+import logo from "../Assets/logo-vantagens-face.png"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function (props) {
@@ -14,36 +15,36 @@ export default function (props) {
       <div className="Auth-form-container">
         <form className="Auth-form">
           <div className="Auth-form-content">
-            <h3 className="Auth-form-title">Sign In</h3>
+            <img className="Auth-image-form" src={logo} width="200px" alt="logo"></img>
             <div className="text-center">
-              Not registered yet?{" "}
+              Nao e registrado ainda?{" "}
               <span className="link-primary" onClick={changeAuthMode}>
-                Sign Up
+                Cadastre-se
               </span>
             </div>
             <div className="form-group mt-3">
-              <label>Email address</label>
+              <label>Email</label>
               <input
                 type="email"
                 className="form-control mt-1"
-                placeholder="Enter email"
+                placeholder="Inserir email"
               />
             </div>
             <div className="form-group mt-3">
-              <label>Password</label>
+              <label>Senha</label>
               <input
                 type="password"
                 className="form-control mt-1"
-                placeholder="Enter password"
+                placeholder="Inserir senha"
               />
             </div>
             <div className="d-grid gap-2 mt-3">
               <button type="submit" className="btn btn-primary">
-                Submit
+                Entrar
               </button>
             </div>
             <p className="text-center mt-2">
-              Forgot <a href="#">password?</a>
+              <a href="#">Esqueceu a senha?</a>
             </p>
           </div>
         </form>
