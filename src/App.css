@@ -1,12 +1,57 @@
-
 .App {
   background-color: white;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebfaff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background: #c2f0ff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #cccccc;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #bababa;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .Auth-form-container {
   display: flex;
-  background: rgb(0,3,195);
-  background: linear-gradient(0deg, rgba(0,3,195,1) 0%, rgba(203,0,202,1) 100%);
+  background: rgb(0, 3, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 3, 195, 1) 0%,
+    rgba(203, 0, 202, 1) 100%
+  );
   /* justify-content: center;
   align-items: center; */
   width: 100vw;
@@ -45,4 +90,53 @@ label {
   font-size: 14px;
   font-weight: 600;
   color: rgb(34, 34, 34);
+}
+
+.Landing-container {
+  height: 100vh;
+  background: rgb(62, 120, 245);
+  background: linear-gradient(
+    0deg,
+    rgb(182, 205, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+#loginButton {
+  margin: 0px 15px;
+}
+
+form {
+  margin-top: 1.5vh;
+}
+
+.first {
+  display: flex;
+  margin-top: 0;
+}
+
+.text-first-section {
+  margin: 15% 5%;
+}
+
+h1 {
+  font-size: 56pt;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+.avatars {
+  margin: 0% 5% 0% 7%;
+}
+
+#saiba-mais {
+  margin-left: 5%;
+}
+
+.buttons {
+  margin-top: 5%;
 }
